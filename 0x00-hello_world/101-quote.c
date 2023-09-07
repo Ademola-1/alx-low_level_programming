@@ -5,7 +5,7 @@
   *
   *Description: print to stderr
   *
-  *Return: Always 1 (success)
+  *Return: 1
   */
 
 int main(void)
