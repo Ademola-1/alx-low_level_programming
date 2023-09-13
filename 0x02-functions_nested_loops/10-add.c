@@ -8,7 +8,7 @@
   *@a: firsr number
   *@b: second number
   *
-  *bReturn: Addition of two int.
+  *Return: Addition of two int.
   */
 
 int add(int a, int b)
