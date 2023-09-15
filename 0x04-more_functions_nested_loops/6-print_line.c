@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_line - prints straight line 
+  *print_line - prints straight line
   * @n: number of times straight line is printed
   * Return: no return
   */
