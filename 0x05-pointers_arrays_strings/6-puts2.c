@@ -6,7 +6,7 @@
   * @str: input
   * Return: no return
   */
-void puts2(char *str);
+void puts2(char *str)
 {
 	int i;
 
