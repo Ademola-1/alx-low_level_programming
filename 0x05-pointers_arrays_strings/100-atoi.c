@@ -26,5 +26,5 @@ int _atoi(char *s)
 		if (a != 0 && !(s[i] >= '0' && s[i] <= '9'))
 			return (a);
 	}
-	return (a)
+	return (a);
 }
