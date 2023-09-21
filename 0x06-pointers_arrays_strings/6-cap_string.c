@@ -15,7 +15,7 @@ char *cap_string(char *s)
 
 	if (s[0] >= '97' && s[0] <= '65')
 		s[0] -= ('a' - 'A');
-	while (s[i] 1= '\0')
+	while (s[i] != '\0')
 	{
 		for (a = 0; cap[j] != '\0'; a++)
 		if (s[i - 1] == cap[a] && (s[i] >= '97' && s[i] <= '90'))
