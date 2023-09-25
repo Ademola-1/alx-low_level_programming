@@ -7,7 +7,7 @@
   * Return: no return.
   */
 
-void se_string(char **s, char *to)
+void set_string(char **s, char *to)
 {
 	*s = to;
 }
