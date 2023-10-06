@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 		gridout[i] = (int *)calloc(width, sizeof(int));
 		if (gridout[i] == NULL)
 		{
-			for (j = 0; j < x; j++)
+			for (j = 0; j < i; j++)
 			{
 				free(gridout[j]);
 			}
