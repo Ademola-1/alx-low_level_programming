@@ -27,10 +27,10 @@ char *str_concat(char *s1, char *s2)
 	strout = (char *)malloc((total + 1) * sizeof(char));
 	if (strout == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	memcpy(strout, s1, size1);
 	memcpy(strout + size1, s2, size2);
 	strout[total] = '\0';
-	return(strout);
+	return (strout);
 }
