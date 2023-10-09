@@ -31,5 +31,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	memcpy(str, s1, len1);
 	memcpy(str + len1, s2, n < len2 ? n : len2);
 	str[len3] = '\0';
-	return (new_str);
+	return (str);
 }
