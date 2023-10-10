@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * realloc - reallocates a memory block
+ * _realloc - reallocates a memory block
  * @ptr: memory
  * @old_size: integer
  * @new_size: integer
  * Return: null
  */
 
-void *realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	if (new_size == 0 && ptr != NULL)
 	{
@@ -17,6 +17,7 @@ void *realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (ptr == NULL)
 		ptr = malloc(new_size);
+
 	if (new_size == old_size)
 		return (ptr);
 
