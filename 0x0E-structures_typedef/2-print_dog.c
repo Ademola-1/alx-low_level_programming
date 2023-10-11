@@ -12,7 +12,7 @@ void print_dog(struct dog *d)
 	{
 		return;
 	}
-	printf("Name: %s\n", d->name != NULL ? D->NAME : "");
+	printf("Name: %s\n", d->name != NULL ? D->NAME : "(nill)";
 	printf("Age: %.1f\n", d->age);
-	printf("owner: %s\n", d->owner != NULL ? d->owner : "");
+	printf("owner: %s\n", d->owner != NULL ? d->owner : "(nill)");
 }
