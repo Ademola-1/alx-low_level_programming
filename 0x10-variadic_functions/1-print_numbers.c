@@ -2,12 +2,12 @@
 
 /**
  * print_numbers - prints numbers followed by a new line
- * @seperator: string to print
+ * @separator: string to print
  * @n: number of parameters
  * Return: no return.
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list list;
 	unsigned int i;
@@ -17,8 +17,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", var_arg(list, int));
-		if (seperator !NULL && i < n - 1)
-			printf("%s", seperator);
+		if (separator !NULL && i < n - 1)
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(list);
