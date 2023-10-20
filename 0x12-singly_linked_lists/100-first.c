@@ -2,7 +2,7 @@
 
 void hareAndTortoise(void) __attribute__ ((constructor));
 /**
- * bmain - function executed before main
+ * hareAndTortoise - function executed before main
  * Return: no return.
  */
 
