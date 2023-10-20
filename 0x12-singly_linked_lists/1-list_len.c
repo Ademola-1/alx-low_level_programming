@@ -6,7 +6,7 @@
  * Return: Number of element
  */
 
-size_t list_len(const list *h)
+size_t list_len(const list_t *h)
 {
 	size_t Ncount = 0;
 	const list_t *current_N = h;
