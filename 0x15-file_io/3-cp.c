@@ -8,14 +8,14 @@
  * Return: Always 0 (success)
  */
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	int fd_rd, fd_wr, i, j, k;
-	char buff[BUFFSIZ];
+	char buff[BUFSIZ];
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENP, "Usage: cp file_from filr_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from filr_to\n");
 		exit(97);
 	}
 	fd_rd = open(argv[1], O_RDONLY);
@@ -25,7 +25,7 @@ int main(int argc, char argv[])
 		exit(98);
 	}
 	fd_wr = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((i = read(fd_rd, buff, BUFFSIZ)) > 0)
+	while ((i = read(fd_rd, buff, BUFSIZ)) > 0)
 	{
 		if (fd_wr < 0 || write(fd_wr, buff, i) != i)
 		{
@@ -41,12 +41,12 @@ int main(int argc, char argv[])
 	}
 	j = close(fd_rd);
 	k = close(fd_wr);
-	if (i == -1 || j == -1)
+	if (j == -1 || k == -1)
 	{
-		if (i < 0)
-			dprintf(STDERR_FILENO, "Errir: Can't close fd %d\n", fd_rd);
 		if (j < 0)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n, fd_wr);
+			dprintf(STDERR_FILENO, "Errir: Can't close fd %d\n", fd_rd);
+		if (k < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_wr);
 		exit(100);
 	}
 	return (0);
