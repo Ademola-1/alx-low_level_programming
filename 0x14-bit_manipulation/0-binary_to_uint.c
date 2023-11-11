@@ -7,7 +7,7 @@
  * Return: The converted number
  */
 
-unsigned in binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int conv = 0, bit;
 
