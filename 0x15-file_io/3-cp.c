@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	if (j == -1 || k == -1)
 	{
 		if (j < 0)
-			dprintf(STDERR_FILENO, "Errir: Can't close fd %d\n", fd_rd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_rd);
 		if (k < 0)
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_wr);
 		exit(100);
