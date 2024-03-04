@@ -8,18 +8,27 @@
 
 int main(void)
 {
-	int i, sum = 0;
-
-	for (i = 1; i <= 50; i++)
+	unsigned long int fib1 = 1;
+	unsigned long int fib2 = 2;
+	int i;
+	
+	printf("%lu, %lu, ", fib1, fib2);
+	for (i < 3; i < 48; i++)
 	{
-		sum += i;
-		if(sum == 1)
+		unsigned long int next_fib;
+		next_fib = fib1 + fib2;
+		printf("%lu", next_fib);
+
+		if (i < 47)
 		{
-			printf("%d", sum);
+			printf(", ");
 		}
 		else
-			printf(", %d", sum);
+		{
+			printf("\n");
+		}
+		fib1 = fib2;
+		fib2 = next_fib;
 	}
-	printf("\n");
 	return (0);
 }
