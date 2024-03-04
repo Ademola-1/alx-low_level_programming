@@ -13,13 +13,13 @@ int main(void)
 	int i;
 	
 	printf("%lu, %lu, ", fib1, fib2);
-	for (i = 3; i < 47; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		unsigned long int next_fib;
 		next_fib = fib1 + fib2;
 		printf("%lu", next_fib);
 
-		if (i < 46)
+		if (i < 50)
 		{
 			printf(", ");
 		}
