@@ -31,6 +31,6 @@ void print_times_table(int n)
 				printf(",%3d", result);
 			}
 		}
-		printf("$\n");
+		printf("\n");
 	}
 }
