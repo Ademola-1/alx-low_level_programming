@@ -11,6 +11,7 @@ int main(void)
 	unsigned long int fib1 = 1;
 	unsigned long int fib2 = 2;
 	unsigned long int sum = 0;
+	unsigned long int next_fib;
 
 	while (fib2 <= 4000000)
 	{
@@ -18,7 +19,7 @@ int main(void)
 		{
 			sum += fib2;
 		}
-		unsigned long int next_fib = fib1 + fib2;
+		next_fib = fib1 + fib2;
 
 		fib1 = fib2;
 		fib2 = next_fib;
